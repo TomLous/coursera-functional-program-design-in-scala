@@ -24,7 +24,7 @@ class StudentBuildLike protected() extends CommonBuild {
     commonSourcePackages := Seq(), // see build.sbt
     courseId := "",
     styleCheckSetting,
-    libraryDependencies += "ch.epfl.lamp" % "scala-grading-runtime_2.11" % "0.3"
+    libraryDependencies += scalaTestDependency
   ).settings(packageSubmissionFiles: _*)
 
   /** **********************************************************

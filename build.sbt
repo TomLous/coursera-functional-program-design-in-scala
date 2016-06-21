@@ -33,7 +33,8 @@ assignmentsMap := {
       partId = "EKNhX",
       maxScore = 10d,
       styleScoreRatio = 0.2,
-      styleSheet = styleSheetPath),
+      styleSheet = styleSheetPath,
+      options = Map("grader-timeout" -> "1800", "Xms" -> "512m", "Xmx" -> "512m", "totalTimeout" -> "1500", "individualTimeout" -> "600")),
     "quickcheck" -> Assignment(
       packageName = "quickcheck",
       key = "l86W1kt6EeWKvAo5SY6hHw",
