@@ -38,5 +38,7 @@ object Lists {
    * @return The largest element in `xs`
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
-    def max(xs: List[Int]): Int = xs.par.fold(Int.MinValue)(_ max _) // also a over the top parallel implementation
+    def max(xs: List[Int]): Int =
+    if(xs.isEmpty) throw new java.util.NoSuchElementException("No elements")
+    else xs.par.fold(Int.MinValue)(_ max _) // also a over the top parallel implementation
   }
