@@ -119,5 +119,6 @@ trait Solver extends GameDef {
     */
   lazy val solution: List[Move] = pathsToGoal match {
     case (_, moveHistory) #:: _ => moveHistory.reverse
+    case _ => List.empty[Move]
   }
 }
