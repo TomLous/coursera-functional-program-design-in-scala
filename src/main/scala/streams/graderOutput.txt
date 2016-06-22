@@ -31,17 +31,17 @@ loops or recursion (StackOverflowException) or excessive mamory
 consumption (OutOfMemoryException).
 
 [Test Description] correct solution for level 6
-[Observed Error] -1
+[Observed Error] Stream() (of class scala.collection.immutable.Stream$Empty$)
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 5
 
 [Test Description] optimal solution length for level 6
-[Observed Error] -1
+[Observed Error] Stream() (of class scala.collection.immutable.Stream$Empty$)
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 5
 
 [Test Description] solution length when no solution is possible
-[Observed Error] -1
+[Observed Error] Stream() (of class scala.collection.immutable.Stream$Empty$)
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 5
 
@@ -49,23 +49,322 @@ consumption (OutOfMemoryException).
 Limits: memory: 512m,  total time: 1500s,  per test case time: 600s
 
 ======== DEBUG OUTPUT OF TESTING TOOL ========
+Find char S
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(1,1)
+
+
+Find char T
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(4,7)
+
+
+Find char S
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(1,1)
+
+
+Find char T
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(4,7)
+
+
+Find char S
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(1,1)
+
+
+Find char T
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(4,7)
+
+
+Find char S
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(1,1)
+
+
+Find char T
+ooo-------
+oSoooo----
+ooooooooo-
+-ooooooooo
+-----ooToo
+------ooo-
+Found => Pos(4,7)
+
+
+Find char S
+------ooooooo--
+oooo--ooo--oo--
+ooooooooo--oooo
+oSoo-------ooTo
+oooo-------oooo
+------------ooo
+Found => Pos(3,1)
+
+
+Find char T
+------ooooooo--
+oooo--ooo--oo--
+ooooooooo--oooo
+oSoo-------ooTo
+oooo-------oooo
+------------ooo
+Found => Pos(3,13)
+
+
+Find char S
+------ooooooo--
+oooo--ooo--oo--
+ooooooooo--oooo
+oSoo-------ooTo
+oooo-------oooo
+------------ooo
+Found => Pos(3,1)
+
+
+Find char T
+------ooooooo--
+oooo--ooo--oo--
+ooooooooo--oooo
+oSoo-------ooTo
+oooo-------oooo
+------------ooo
+Found => Pos(3,13)
+
+
+Find char S
+-----oooooo----
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----ooTo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(-1,-1)
+
+
+Find char T
+-----oooooo----
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----ooTo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(4,13)
+
+
+Find char S
+-----oooooo----
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----ooTo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(-1,-1)
+
+
+Find char T
+-----oooooo----
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----ooTo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(4,13)
+
+
+Find char S
+-----oooooo---T
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----oooo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(-1,-1)
+
+
+Find char T
+-----oooooo---T
+-----o--ooo----
+-----o--ooooo--
+Sooooo-----oooo
+----ooo----oooo
+----ooo-----ooo
+------o--oo----
+------ooooo----
+------ooooo----
+-------ooo-----
+Found => Pos(0,14)
+
+
+Find char S
+-----oo-ooo----
+-----oooooo----
+ooo---oo-ooooo-
+oSooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oooooo-o--ooo-T
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(3,1)
+
+
+Find char T
+-----oo-ooo----
+-----oooooo----
+ooo---oo-ooooo-
+oSooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oooooo-o--ooo-T
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,14)
+
+
+Find char S
+-----oo-ooo----
+-----oooooo----
+ooo---oo-ooooo-
+oSooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oooooo-o--ooo-T
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(3,1)
+
+
+Find char T
+-----oo-ooo----
+-----oooooo----
+ooo---oo-ooooo-
+oSooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oooooo-o--ooo-T
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,14)
+
+
+Find char S
+-----oo-ooo----
+-----ooooooo---
+ooo---oo-ooooo-
+ooooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oToooo-o--ooo-S
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,14)
+
+
+Find char T
+-----oo-ooo----
+-----ooooooo---
+ooo---oo-ooooo-
+ooooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oToooo-o--ooo-S
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,1)
+
+
+Find char S
+-----oo-ooo----
+-----ooooooo---
+ooo---oo-ooooo-
+ooooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oToooo-o--ooo-S
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,14)
+
+
+Find char T
+-----oo-ooo----
+-----ooooooo---
+ooo---oo-ooooo-
+ooooooooo--oo--
+-----oo-oo-ooo-
+-----oooooo-oo-
+ooo--oooooo-ooo
+oToooo-o--ooo-S
+ooo--ooo---oooo
+ooo---------ooo
+Found => Pos(7,1)
 [test failure log] test name: BloxorzSuite::optimal solution length for level 6::5
-java.lang.IndexOutOfBoundsException: -1
-scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:132)
-scala.collection.immutable.Vector.apply(Vector.scala:122)
-streams.StringParserTerrain$class.findChar(StringParserTerrain.scala:73)
-streams.BloxorzSuite$$anonfun$15$$anon$15.findChar(BloxorzSuite.scala:313)
-streams.StringParserTerrain$class.startPos(StringParserTerrain.scala:81)
-streams.BloxorzSuite$$anonfun$15$$anon$15.startPos$lzycompute(BloxorzSuite.scala:313)
-streams.BloxorzSuite$$anonfun$15$$anon$15.startPos(BloxorzSuite.scala:313)
-streams.GameDef$class.startBlock(GameDef.scala:87)
-streams.BloxorzSuite$$anonfun$15$$anon$15.startBlock(BloxorzSuite.scala:313)
-streams.Solver$class.pathsFromStart(Solver.scala:100)
-streams.BloxorzSuite$$anonfun$15$$anon$15.pathsFromStart$lzycompute(BloxorzSuite.scala:313)
-streams.BloxorzSuite$$anonfun$15$$anon$15.pathsFromStart(BloxorzSuite.scala:313)
-streams.Solver$class.pathsToGoal(Solver.scala:108)
-streams.BloxorzSuite$$anonfun$15$$anon$15.pathsToGoal$lzycompute(BloxorzSuite.scala:313)
-streams.BloxorzSuite$$anonfun$15$$anon$15.pathsToGoal(BloxorzSuite.scala:313)
+scala.MatchError: Stream() (of class scala.collection.immutable.Stream$Empty$)
 streams.Solver$class.solution(Solver.scala:120)
 streams.BloxorzSuite$$anonfun$15$$anon$15.solution$lzycompute(BloxorzSuite.scala:313)
 streams.BloxorzSuite$$anonfun$15$$anon$15.solution(BloxorzSuite.scala:313)
@@ -76,25 +375,25 @@ ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
 org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
 
 
 [test failure log] test name: BloxorzSuite::correct solution for level 6::5
-java.lang.IndexOutOfBoundsException: -1
-scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:132)
-scala.collection.immutable.Vector.apply(Vector.scala:122)
-streams.StringParserTerrain$class.findChar(StringParserTerrain.scala:73)
-streams.BloxorzSuite$$anonfun$16$$anon$16.findChar(BloxorzSuite.scala:319)
-streams.StringParserTerrain$class.startPos(StringParserTerrain.scala:81)
-streams.BloxorzSuite$$anonfun$16$$anon$16.startPos$lzycompute(BloxorzSuite.scala:319)
-streams.BloxorzSuite$$anonfun$16$$anon$16.startPos(BloxorzSuite.scala:319)
-streams.GameDef$class.startBlock(GameDef.scala:87)
-streams.BloxorzSuite$$anonfun$16$$anon$16.startBlock(BloxorzSuite.scala:319)
-streams.Solver$class.pathsFromStart(Solver.scala:100)
-streams.BloxorzSuite$$anonfun$16$$anon$16.pathsFromStart$lzycompute(BloxorzSuite.scala:319)
-streams.BloxorzSuite$$anonfun$16$$anon$16.pathsFromStart(BloxorzSuite.scala:319)
-streams.Solver$class.pathsToGoal(Solver.scala:108)
-streams.BloxorzSuite$$anonfun$16$$anon$16.pathsToGoal$lzycompute(BloxorzSuite.scala:319)
-streams.BloxorzSuite$$anonfun$16$$anon$16.pathsToGoal(BloxorzSuite.scala:319)
+scala.MatchError: Stream() (of class scala.collection.immutable.Stream$Empty$)
 streams.Solver$class.solution(Solver.scala:120)
 streams.BloxorzSuite$$anonfun$16$$anon$16.solution$lzycompute(BloxorzSuite.scala:319)
 streams.BloxorzSuite$$anonfun$16$$anon$16.solution(BloxorzSuite.scala:319)
@@ -105,25 +404,25 @@ ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
 org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
 
 
 [test failure log] test name: BloxorzSuite::solution length when no solution is possible::5
-java.lang.IndexOutOfBoundsException: -1
-scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:132)
-scala.collection.immutable.Vector.apply(Vector.scala:122)
-streams.StringParserTerrain$class.findChar(StringParserTerrain.scala:73)
-streams.BloxorzSuite$$anonfun$17$$anon$17.findChar(BloxorzSuite.scala:325)
-streams.StringParserTerrain$class.startPos(StringParserTerrain.scala:81)
-streams.BloxorzSuite$$anonfun$17$$anon$17.startPos$lzycompute(BloxorzSuite.scala:325)
-streams.BloxorzSuite$$anonfun$17$$anon$17.startPos(BloxorzSuite.scala:325)
-streams.GameDef$class.startBlock(GameDef.scala:87)
-streams.BloxorzSuite$$anonfun$17$$anon$17.startBlock(BloxorzSuite.scala:325)
-streams.Solver$class.pathsFromStart(Solver.scala:100)
-streams.BloxorzSuite$$anonfun$17$$anon$17.pathsFromStart$lzycompute(BloxorzSuite.scala:325)
-streams.BloxorzSuite$$anonfun$17$$anon$17.pathsFromStart(BloxorzSuite.scala:325)
-streams.Solver$class.pathsToGoal(Solver.scala:108)
-streams.BloxorzSuite$$anonfun$17$$anon$17.pathsToGoal$lzycompute(BloxorzSuite.scala:325)
-streams.BloxorzSuite$$anonfun$17$$anon$17.pathsToGoal(BloxorzSuite.scala:325)
+scala.MatchError: Stream() (of class scala.collection.immutable.Stream$Empty$)
 streams.Solver$class.solution(Solver.scala:120)
 streams.BloxorzSuite$$anonfun$17$$anon$17.solution$lzycompute(BloxorzSuite.scala:325)
 streams.BloxorzSuite$$anonfun$17$$anon$17.solution(BloxorzSuite.scala:325)
@@ -134,3 +433,21 @@ ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
 org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
 org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+22 June 2016 at 11:27 AM
+9/10
+Yes

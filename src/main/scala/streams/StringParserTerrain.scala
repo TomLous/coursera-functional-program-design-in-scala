@@ -69,25 +69,17 @@ trait StringParserTerrain extends GameDef {
     * `Vector` class
     */
   def findChar(c: Char, levelVector: Vector[Vector[Char]]): Pos = {
-    val x = levelVector.indexWhere(_.indexOf(c) > 0)
+    val x = levelVector.indexWhere(_.indexOf(c) >= 0)
 
-    // Aparently a char could not be found?
-    /*
-    ======== DEBUG OUTPUT OF TESTING TOOL ========
-[test failure log] test name: BloxorzSuite::optimal solution length for level 6::5
-java.lang.IndexOutOfBoundsException: -1
-scala.collection.immutable.Vector.checkRangeConvert(Vector.scala:132)
-scala.collection.immutable.Vector.apply(Vector.scala:122)
-streams.StringParserTerrain$class.findChar(StringParserTerrain.scala:73)
-     */
-
+   /*
     println("\n\nFind char "+ c)
     levelVector.foreach(v =>
       println(v.mkString(""))
     )
+    */
 
     val y = levelVector.lift(x).getOrElse(Vector()).indexOf(c)
-    println("Found => Pos("+x+","+y+")")
+//    println("Found => Pos("+x+","+y+")")
     Pos(x, y)
   }
 

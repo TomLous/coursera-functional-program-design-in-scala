@@ -60,7 +60,7 @@ class BloxorzSuite extends FunSuite {
 
     val level =
       """ooo-------
-        |oSoooo------T
+        |Sooooo------T
         |ooooooooo-
         |-ooooooooo
         |-----oooTo
@@ -101,8 +101,11 @@ class BloxorzSuite extends FunSuite {
   test("findChar level fail 2") {
     new LevelFail2 {
       assert(goal == Pos(1, 12))
+      assert(startPos == Pos(1,0))
     }
   }
+
+
 
   test("neighborsWithHistory") {
     new Level1 {
