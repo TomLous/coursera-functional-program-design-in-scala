@@ -1,2 +1,2 @@
 course := "progfun2"
-assignment := "streams"
+assignment := "quickcheck"
