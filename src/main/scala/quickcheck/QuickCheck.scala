@@ -37,7 +37,6 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
 
   property("The minimal value of a melded Heap should be the min of the min of both heaps") = forAll { (h1: H, h2: H) =>
     findMin(meld(h1, h2)) == min(findMin(h1), findMin(h2))
-    readLine()
   }
 
 
