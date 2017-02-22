@@ -23,7 +23,11 @@ object Lists {
    * @param xs A list of natural numbers
    * @return The sum of all elements in `xs`
    */
-    def sum(xs: List[Int]): Int = xs.par.fold(0)(_ + _) // hey probably not the worst way to do this :-)
+    def sum(xs: List[Int]): Int =  xs match{ 
+        case Nil => 0
+        case x :: Nil => x
+        case x :: y :: rest => sum(x+y :: rest)   
+    }
   
   /**
    * This method returns the largest element in a list of integers. If the
